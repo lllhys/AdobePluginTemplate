@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionManifest ExtensionBundleId="{EXTENSION_BUNDLE_ID}" ExtensionBundleVersion="1.0.0" Version="6.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="{EXTENSION_ID}" Version="0.0.0" />
+    </ExtensionList>
+
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="PHXS" Version="[11.0,99.9]"/>
+            <Host Name="PHSP" Version="[11.0,99.9]"/>
+        </HostList>
+
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0" />
+        </RequiredRuntimeList>
+
+    </ExecutionEnvironment>
+
+    <DispatchInfoList>
+        <Extension Id="{EXTENSION_ID}">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/main.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--mixed-context</Parameter>
+                        <Parameter>--allow-file-access</Parameter>
+                        <Parameter>--allow-file-access-from-files</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                    <StartOn>
+                    </StartOn>
+                </Lifecycle>
+
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Plugin Template</Menu>
+                    <Geometry>
+                        <!-- size -->
+                        <Size>
+                            <Height>760</Height>
+                            <Width>520</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>1200</Height>
+                            <Width>1000</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>600</Height>
+                            <Width>400</Width>
+                        </MinSize>
+                    </Geometry>
+                    <!-- icon -->
+                    <Icons>
+                        <Icon Type="Normal">./img/icon.png</Icon>
+                        <Icon Type="RollOver">./img/icon.png</Icon>
+                        <Icon Type="DarkNormal">./img/icon.png</Icon>
+                        <Icon Type="DarkRollOver">./img/icon.png</Icon>
+                    </Icons>
+                </UI>
+
+            </DispatchInfo>
+        </Extension>
+
+    </DispatchInfoList>
+</ExtensionManifest>

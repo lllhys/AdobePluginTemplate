@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,10 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionList>
+  <Extension Id="{EXTENSION_ID}">
+    <HostList>
+      <Host Name="PHXS" Port="{PORT}" />
+      <Host Name="PHSP" Port="{PORT}"/>
+    </HostList>
+  </Extension>
+</ExtensionList>
